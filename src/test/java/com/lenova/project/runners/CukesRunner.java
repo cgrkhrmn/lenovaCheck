@@ -7,7 +7,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		plugin = "json:target/cucumber-reports",
+		plugin = {"html:target/cucumber-reports", "json:target/cucumber.json"},
 		features = "./src/test/resources/features/",
 		glue = "com.lenova.project.stepDefinitions",
 		tags = "@lenova",
