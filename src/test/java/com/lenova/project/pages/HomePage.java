@@ -14,7 +14,7 @@ public class HomePage {
 	public HomePage() {
 		PageFactory.initElements(Driver.getInstance(), this);
 	}
-	
+	// this one
 	@FindBy(xpath="//a[@href='/us/en/outletus/c/LAPTOPS/']")
 	public WebElement laptops;
 	
